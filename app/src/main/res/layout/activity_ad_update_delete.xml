@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdUpdateDelete">
+
+    <ImageView
+        android:id="@+id/backgrond"
+        android:layout_width="415dp"
+        android:layout_height="736dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background"
+        android:contentDescription="@string/todo" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/whitebox"
+        android:layout_width="338dp"
+        android:layout_height="550dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.447"
+        app:srcCompat="?attr/popupMenuBackground"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="297dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/newspaper"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="112dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/edit_ad"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="244dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/category"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="271dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/date_to_be_published"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="230dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="316dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/advertisement"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="87dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="488dp"
+        android:fontFamily="@font/ebrima"
+        android:text="Word Count :"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="DeleteData"
+        android:text="@string/delete"
+        app:backgroundTint="#33ccff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="UpdateData"
+        android:text="@string/update"
+        app:backgroundTint="#33ccff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/c_e_newspaper"
+        android:layout_width="305dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:hint="Type Newspaper"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/c_e_date"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:hint="YYYY/MM/DD"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/c_e_category"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:hint="Type Category"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/c_e_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="488dp"
+        android:hint="00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <EditText
+        android:id="@+id/c_e_body"
+        android:layout_width="305dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="340dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type Add Here"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

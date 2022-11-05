@@ -1,0 +1,282 @@
+<resources>
+    //welcome page
+    <string name="app_name">LesiAdsPro</string>
+    <string name="hello_there">HELLO THERE !</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="new_to_here">New to here ?</string>
+    <string name="create_an_account">Create an account ?</string>
+    <string name="good_to_see_you">Good to see you !</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Login</string>
+    <string name="already_in">Already In ?</string>
+    //sign in and sign up, edit profile, delete
+    <string name="username">Username</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email</string>
+    <string name="addphoto">Add Photo</string>
+    //customer dashboard
+    <string name="viewnewspaper">View Newspaper</string>
+    <string name="postad">Post Ad</string>
+    <string name="myads">My Ads</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="paymenthistory">Payment History</string>
+    <string name="givefeedback">Give Feedback</string>
+    //feedback,edit,delete
+    <string name="save">Save</string>
+    <string name="delete">DELETE</string>
+    <string name="submit">Submit</string>
+    <string name="update">UPDATE</string>
+
+    //menu navigation
+    <string name="app_name1">Navigation Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    //profile names
+    <string name="adsubmission">Ad Submission</string>
+    <string name="wendyshon94">wendyshon94</string>
+    <string name="son">Son</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="seungwan">Seungwan</string>
+    <string name="wendy99_gmail_com">wendy99@gmail.com</string>
+    <string name="this_app_is_trash">This app is trash</string>
+    <string name="go_back">Go Back</string>
+    <string name="photo">photo</string>
+    <string name="edit_feedback">Edit Feedback</string>
+
+    //UGOC JINADASA
+
+    <string name="newspaper">Newspaper</string>
+    <string name="ad_submission">Ad Submission</string>
+    <string name="language">Language</string>
+    <string name="date_to_be_published">Date to be published</string>
+    <string name="category">Category</string>
+    <string name="advertisement">Advertisement</string>
+    <string name="edit_ad">Edit Ad</string>
+    <string name="word_count_12">Word Count : 12</string>
+    <string name="lankadeepa">Lankadeepa</string>
+    <string name="sinhala">Sinhala</string>
+    <string name="_2021_08_21">2021/08/21</string>
+    <string name="land_for_sale">Land for Sale</string>
+    <string name="date_to_be">Date to be</string>
+    <string name="published">Published</string>
+    <string name="ad_review">Ad Review</string>
+    <string name="confirm">Confirm</string>
+    <string name="reject">Reject</string>
+    <string name="view_ad">View Ad</string>
+    <string name="words_12">Words : 12</string>
+    <string name="status_submitted">Status : Submitted</string>
+    <string name="date_2021_08_21">Date : 2021/08/21</string>
+    <string name="category_land_for_sale">Category : Land for sale</string>
+    <string name="todo">TODO</string>
+    <string name="review_ad">Review Ad</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorAccent">@color/design_default_color_surface</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    //Add Newspaper List
+    <string name="add_newspaper">Add Newspaper</string>
+    <string name="name">Name</string>
+    <string name="inputDate">DD/MM/YY</string>
+    <string name="add_articles_name">Add Articles Name</string>
+    <string name="newspaper_logo">Newspaper Logo</string>
+    <string name="upload">Upload</string>
+    <string name="submit1">Submit</string>
+
+
+    //Edit Newspaper List
+    <string name="edit_newspaper">Edit Newspaper</string>
+    <string name="sunday_observer">Sunday Observer</string>
+    <string name="marriage_proposals">Marriage Proposals</string>
+    <string name="observer_jobs">Observer Jobs</string>
+    <string name="youth_observer">Youth Observer</string>
+    <string name="junior_observer">Junior Observer</string>
+    <string name="upload1">Upload</string>
+    <string name="subm">Submit</string>
+
+
+    //Confirmation Newspaper List
+    <string name="confirmation">Confirmation</string>
+    <string name="date0">Date : 15th August 2021 </string>
+    <string name="article">Article Names : Marriage Proposals</string>
+    <string name="observe_job">Observe Job</string>
+    <string name="youth_observer1">Youth Observer</string>
+    <string name="junior_observer2">Junior Observer</string>
+    <string name="logo">Logo</string>
+    <string name="add">Add</string>
+
+
+    //Newspaper History
+    <string name="history">Newspaper History</string>
+    <string name="sunday_observe1">Sunday Observe</string>
+    <string name="junior_observer1">Junior Observer</string>
+    <string name="observer_job">Observer Job</string>
+    <string name="count1">Monthly Ad Count : 300</string>
+    <string name="sunday_observe">Sunday Observe</string>
+    <string name="marriage_proposal">Marriage Proposal</string>
+    <string name="youth_observer2">Youth Observer</string>
+    <string name="delete_">delete</string>
+    <string name="delete_1">delete</string>
+    <string name="count2">Monthly Ad Count : 100</string>
+
+
+    //Dashboard Admin
+    <string name="dashboard">Dashboard</string>
+    <string name="admin_">Admin</string>
+    <string name="registration">Registration</string>
+    <string name="customer">Customer</string>
+
+
+    //View Newspaper Details
+    <string name="observer">Sunday Observer</string>
+    <string name="marriage_proposals1">Marriage Proposals</string>
+    <string name="observer_jobs1">Jobs Vacancy</string>
+    <string name="youth_observer3">Youth Plus</string>
+    <string name="junior_observer3">Entertainment</string>
+    <string name="sub">OK</string>
+
+
+    //Newspaper Panel
+    <string name="panel">Newspaper Panel</string>
+    <string name="but1">Daily Mirror</string>
+    <string name="but2">Daily News</string>
+    <string name="but3">Lankadeepa</string>
+    <string name="but4">Dinamina</string>
+    <string name="but5">Thinakaran</string>
+    <string name="but6">Daily Mirror</string>
+    <string name="idbtnEdit">Edit</string>
+    <string name="idbtnDelete">Delete</string>
+
+
+    //Payment Page
+
+    <string name="email1">Email</string>
+    <string name="payamount">Pay Amount Rs.2300.00</string>
+    <string name="cardname">Card Name</string>
+    <string name="cardno">Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="cardex">Card Expiery</string>
+    <string name="buttn">ADD</string>
+
+
+    //Edit Payment Page
+    <string name="name2">Aruna Gamage</string>
+    <string name="email2">aruna@gmail.com</string>
+    <string name="cardno1">5432123456789012</string>
+    <string name="cardex1">03/2021</string>
+    <string name="cvv1">395</string>
+    <string name="buttn1">SUBMIT</string>
+
+    //Checkout Page
+    <string name="check">Checkout</string>
+    <string name="text1">Check your payment details ?</string>
+    <string name="name3">Aruna Gamage</string>
+    <string name="email3">aruna@gmail.com</string>
+    <string name="amout">Pay Amount : Rs 2300.00</string>
+    <string name="cardno2">Card Number : 5432123456789012</string>
+    <string name="cardex3">Card Expiery : 03/2021</string>
+    <string name="cvv2">CVV : 395</string>
+    <string name="buttn2">PAY AMOUNT</string>
+    <string name="buttn3">EDIT PAYMENT DETAILS</string>
+
+    //Rating Page
+    <string name="rate">Rate Our App</string>
+    <string name="text2">How would you rate Our App Experience ???</string>
+    <string name="buttn4">SUBMIT</string>
+
+
+    //Customer side payment history page
+    <string name="history1">Payment History</string>
+    <string name="text4">Payment Completed !</string>
+    <string name="name4">Aruna Gamage</string>
+    <string name="email4">aruna@gmail.com</string>
+    <string name="time">9:00AM</string>
+    <string name="amount3">Card Rs 2300.00</string>
+    <string name="buttn6">DELETE</string>
+
+    <string name="text5">Payment Completed !</string>
+    <string name="name5">Kamal Perera</string>
+    <string name="email5">kamal12@gmai.com</string>
+    <string name="amount4">Card Rs 2000.00</string>
+    <string name="buttn5">DELETE</string>
+
+    //Admin side payment history page
+    <string name="history2">Payment History</string>
+    <string name="name6">Aruna Gamage</string>
+    <string name="email6">aruna@gmail.com</string>
+    <string name="amount5">Card Rs 2300.00</string>
+    <string name="bank">BOC Bank</string>
+    <string name="branch">Galle</string>
+    <string name="buttn7">DELETE</string>
+
+    <string name="name7">Kamal Perera</string>
+    <string name="email7">kamal@gmail.com</string>
+    <string name="amount6">Card Rs 2000.00</string>
+    <string name="time3">18:36AM</string>
+    <string name="bank1">NSB Banak</string>
+    <string name="branch1">Malabe</string>
+    <string name="buttn8">DELETE</string>
+    <string name="Pay_AddButtn">ADD</string>
+    <string name="Pay_RateButtn">SUBMIT</string>
+    <string name="Pay_EditButtn">SUBMIT</string>
+    <string name="Pay_CheckButtn">PAY AMOUNT</string>
+    <string name="Pay_CheckEditButtn">Edit Payment Details</string>
+    <string name="Pay_AdminDelButtn">DELETE</string>
+    <string name="Pay_AdminDelButtn1">delete</string>
+    <string name="Pay_CusDelButtn">delete</string>
+    <string name="Pay_CusDelButtn1">delete</string>
+    <string name="pay_ExpDate">DD/MM/YY</string>
+    <string name="pay_name">Name</string>
+    <string name="btnedit_1">Edit</string>
+    <string name="btnedit_2">Edit</string>
+    <string name="edit">edit</string>
+    <string name="text">text</string>
+
+    //Add Inventory
+    <string name="add_inventory">Add Inventory</string>
+    <string name="d_name">Donors Name</string>
+    <string name="contact">Contact Number</string>
+    <string name="nic">NIC Number</string>
+    <string name="address">Address</string>
+    <string name="inventory_type">Inventory Type</string>
+    <string name="in_qty">Quantities</string>
+    <string name="exp_date">Expected Delivery Date</string>
+    <string name="exp_Date1">DD/MM/YY</string>
+    <string name="next_inv">Next</string>
+    <string name="add_inv">Add</string>
+    <string name="check1">Unprocessed Foods</string>
+    <string name="check2">Spices</string>
+    <string name="check3">Dry Foods</string>
+
+
+    //Add Funds
+    <string name="add_funds">Add Funds</string>
+    <string name="card_no">Card Number</string>
+    <string name="card_edate">Card Expire Date</string>
+    <string name="cvv_no">CVV</string>
+    <string name="funds">Amount of funds</string>
+    <string name="pay_type">Payment Type</string>
+    <string name="next_pay">Next</string>
+    <string name="fund_pay">Pay</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="hunger_kitchen">Hunger Kitchen</string>
+    <string name="user_profile">User Profile</string>
+    <string name="add_service">Add Service</string>
+    <string name="add_to_inventory">Add to Inventory</string>
+
+</resources>

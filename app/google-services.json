@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "977365293755",
+    "firebase_url": "https://hunger-kitchen-default-rtdb.firebaseio.com",
+    "project_id": "hunger-kitchen",
+    "storage_bucket": "hunger-kitchen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977365293755:android:d6bc2f83d0b2b492d4679e",
+        "android_client_info": {
+          "package_name": "com.uee.HungerKitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977365293755-dcvfbukpgfmbnb1g6t3ut7ijhniareub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZGuWur3HzSnOHTzLj542TcoeUjqkoCLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977365293755-dcvfbukpgfmbnb1g6t3ut7ijhniareub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
