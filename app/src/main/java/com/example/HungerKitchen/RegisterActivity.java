@@ -28,6 +28,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText mFirstName, mLastName, mEmail, mPassword, mPhone, mConfirmPassword;
@@ -38,6 +39,8 @@ public class RegisterActivity extends AppCompatActivity {
     DatabaseReference reference;
     String userID;
     Button signup;
+
+    String email, password, firstname, lastname, phone, password2;
 
 
     @Override
@@ -67,15 +70,12 @@ public class RegisterActivity extends AppCompatActivity {
                 reference = rootnode.getReference("users");
 
                 //get values
-                String email = mEmail.getText().toString().trim();
-                String password = mPassword.getText().toString().trim();
-                String firstname = mFirstName.getText().toString();
-                String lastname = mLastName.getText().toString();
-                String phone = mPhone.getText().toString();
-                String password2 = mConfirmPassword.getText().toString().trim();
-
-                UserHelperClass helperClass = new UserHelperClass(firstname, lastname, email, phone, password);
-                reference.child(firstname).setValue(helperClass);
+                email = mEmail.getText().toString().trim();
+                password = mPassword.getText().toString().trim();
+                firstname = mFirstName.getText().toString();
+                lastname = mLastName.getText().toString();
+                phone = mPhone.getText().toString();
+                password2 = mConfirmPassword.getText().toString().trim();
 
                 //Validation process
                 if (TextUtils.isEmpty(email)) {
@@ -97,7 +97,7 @@ public class RegisterActivity extends AppCompatActivity {
                     mPhone.setError("Enter a valid phone number");
                     return;
                 }
-                if(!password.equals(password2)){
+                if (!password.equals(password2)) {
                     mPassword.setError("Password should be match with confirm password");
                 }
 
@@ -108,15 +108,16 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(RegisterActivity.this, "User Created", Toast.LENGTH_SHORT).show();
-                            userID = fAuth.getCurrentUser().getUid();
+                            userID = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
+                            UserHelperClass helperClass = new UserHelperClass(firstname, lastname, email, phone, password);
+                            reference.child(userID).setValue(helperClass);
                             DocumentReference documentReference = fstore.collection("users").document(userID);
                             Map<String, Object> user = new HashMap<>();
                             user.put("fname", firstname);
                             user.put("lname", lastname);
                             user.put("email", email);
                             user.put("phone", phone);
-
+                            Toast.makeText(RegisterActivity.this, "User Created", Toast.LENGTH_SHORT).show();
                             //CLI comments
 
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {

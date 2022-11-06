@@ -136,10 +136,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/mSignUpBtn4" />
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate" />
 
     <Button
-        android:id="@+id/mSignUpBtn4"
+        android:id="@+id/btnUpdate"
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:layout_marginStart="44dp"

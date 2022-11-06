@@ -1,6 +1,6 @@
 <resources>
     //welcome page
-    <string name="app_name">LesiAdsPro</string>
+    <string name="app_name">Hunger Kitchen</string>
     <string name="hello_there">HELLO THERE !</string>
     <string name="sign_up">Sign Up</string>
     <string name="new_to_here">New to here ?</string>
