@@ -5,10 +5,10 @@ plugins {
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "27.0.0"
+    buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.lesiadspro"
+        applicationId "com.example.HungerKitchen"
         minSdkVersion 27
         targetSdkVersion 30
         versionCode 1

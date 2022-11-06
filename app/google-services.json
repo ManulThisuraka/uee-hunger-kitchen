@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:977365293755:android:d6bc2f83d0b2b492d4679e",
         "android_client_info": {
-          "package_name": "com.uee.HungerKitchen"
+          "package_name": "com.example.HungerKitchen"
         }
       },
       "oauth_client": [
