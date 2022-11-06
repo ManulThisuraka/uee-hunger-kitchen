@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_ad_submission.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_add_funds1.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_add_funds2.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_add_inventory1.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_add_inventory2.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_add_volunteering.xml" value="0.1644021739130435" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.11296859169199595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_edit_inventory.xml" value="0.11296859169199595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_edit_profile.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_home_dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_main.xml" value="0.11296859169199595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_main_main.xml" value="0.11296859169199595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_person.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_profile.xml" value="0.21603260869565216" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/activity_user_profile.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/HungerKitchen/app/src/main/res/layout/toolbar.xml" value="0.18055555555555555" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
