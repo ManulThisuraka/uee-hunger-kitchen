@@ -3,8 +3,8 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc525076b21e20020bf3c8968c5e144c/firebase-firestore-23.0.3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/56f4bf7aec1ab8817e4ba3124cb7067f/firebase-firestore-23.0.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/56f4bf7aec1ab8817e4ba3124cb7067f/firebase-firestore-23.0.3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/56f4bf7aec1ab8817e4ba3124cb7067f/firebase-firestore-23.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc525076b21e20020bf3c8968c5e144c/firebase-firestore-23.0.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc525076b21e20020bf3c8968c5e144c/firebase-firestore-23.0.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/23.0.3/e0a35744124e1ac4a50f470d32e8cc5b19b78209/firebase-firestore-23.0.3-javadoc.jar!/" />
