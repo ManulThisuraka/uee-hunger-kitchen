@@ -87,9 +87,9 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
-                        if (mEmail.getText().toString().equals("admin99@gmail.com") && mPassword.getText().toString().equals("12345678")) {
+                        if (mEmail.getText().toString().equals("admin@gmail.com") && mPassword.getText().toString().equals("123456")) {
                             Toast.makeText(LoginActivity.this, "Admin logged in..", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), HomeDashboard.class));
+                            startActivity(new Intent(getApplicationContext(), AdminDashboard.class));
                         } else {
                             if (task.isSuccessful()) {
                                 Toast.makeText(LoginActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
