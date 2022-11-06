@@ -4,10 +4,8 @@
     <string name="hello_there">HELLO THERE !</string>
     <string name="sign_up">Sign Up</string>
     <string name="new_to_here">New to here ?</string>
-    <string name="create_an_account">Create an account ?</string>
     <string name="good_to_see_you">Good to see you !</string>
     <string name="sign_in">Sign In</string>
-    <string name="login">Login</string>
     <string name="already_in">Already In ?</string>
     //sign in and sign up, edit profile, delete
     <string name="username">Username</string>
@@ -24,9 +22,9 @@
     <string name="givefeedback">Give Feedback</string>
     //feedback,edit,delete
     <string name="save">Save</string>
-    <string name="delete">DELETE</string>
+    <string name="delete">Delete</string>
     <string name="submit">Submit</string>
-    <string name="update">UPDATE</string>
+    <string name="update">Update</string>
 
     //menu navigation
     <string name="app_name1">Navigation Drawer</string>
@@ -136,7 +134,7 @@
     //Dashboard Admin
     <string name="dashboard">Dashboard</string>
     <string name="admin_">Admin</string>
-    <string name="registration">Registration</string>
+    <string name="registrations">Registrations</string>
     <string name="customer">Customer</string>
 
 
@@ -244,6 +242,15 @@
     <string name="btnedit_2">Edit</string>
     <string name="edit">edit</string>
     <string name="text">text</string>
+    <string name="title_activity_add_volunteering">AddVolunteering</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     //Add Inventory
     <string name="add_inventory">Add Inventory</string>
@@ -260,6 +267,7 @@
     <string name="check1">Unprocessed Foods</string>
     <string name="check2">Spices</string>
     <string name="check3">Dry Foods</string>
+    <string name="edit_inventory">Inventory Summary</string>
 
 
     //Add Funds
@@ -278,5 +286,4 @@
     <string name="user_profile">User Profile</string>
     <string name="add_service">Add Service</string>
     <string name="add_to_inventory">Add to Inventory</string>
-
 </resources>

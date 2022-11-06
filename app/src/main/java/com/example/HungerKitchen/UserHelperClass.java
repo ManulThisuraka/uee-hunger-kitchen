@@ -2,17 +2,18 @@ package com.example.HungerKitchen;
 
 public class UserHelperClass {
 
-    String firstname,lastname,email,phone,password;
+    String firstname,lastname,email,phone,username,password;
 
     public UserHelperClass(){
 
     }
 
-    public UserHelperClass(String firstname, String lastname, String email, String phone, String password) {
+    public UserHelperClass(String firstname, String lastname, String email, String phone, String username, String password) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
         this.phone = phone;
+        this.username = username;
         this.password = password;
     }
 
@@ -46,6 +47,14 @@ public class UserHelperClass {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

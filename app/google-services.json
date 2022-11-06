@@ -8,9 +8,38 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:977365293755:android:ece9062f05e6b1f7d4679e",
+        "android_client_info": {
+          "package_name": "com.example.lesiadspro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977365293755-dcvfbukpgfmbnb1g6t3ut7ijhniareub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZGuWur3HzSnOHTzLj542TcoeUjqkoCLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977365293755-dcvfbukpgfmbnb1g6t3ut7ijhniareub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:977365293755:android:d6bc2f83d0b2b492d4679e",
         "android_client_info": {
-          "package_name": "com.example.HungerKitchen"
+          "package_name": "com.uee.HungerKitchen"
         }
       },
       "oauth_client": [

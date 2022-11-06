@@ -8,7 +8,24 @@
     tools:context=".AddInventorySecond">
 
     <TextView
-        android:id="@+id/textQty"
+        android:id="@+id/textView2"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="96dp"
+        android:fontFamily="@font/ebrimabd"
+        android:text="@string/add_inventory"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text6"
         android:layout_width="103dp"
         android:layout_height="26dp"
         android:layout_marginStart="46dp"
@@ -17,14 +34,14 @@
         android:text="@string/in_qty"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textType"
+        android:id="@+id/text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
@@ -33,30 +50,14 @@
         android:text="@string/inventory_type"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textInv2"
-        android:layout_width="119dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="146dp"
-        android:text="@string/add_inventory"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textExpDate"
+        android:id="@+id/text7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
@@ -65,14 +66,14 @@
         android:text="@string/exp_date"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/inputQty"
+        android:id="@+id/AIinputQty"
         android:layout_width="341dp"
         android:layout_height="154dp"
         android:layout_marginStart="42dp"
@@ -92,25 +93,36 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/inputExpDate"
-        android:layout_width="392dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="492dp"
-        android:layout_marginEnd="3dp"
-        android:background="@drawable/textbox"
+        android:id="@+id/AIexpectDate"
+        android:layout_width="310dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/input_field"
         android:ems="10"
         android:hint="@string/exp_Date1"
-        android:inputType="date"
-        android:minHeight="48dp"
-        android:textAlignment="center"
+        android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textColorHint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AIinputQty"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/AIinvtype"
+        android:layout_width="310dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AIinputQty"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <CheckBox
@@ -123,7 +135,7 @@
         android:text="@string/check3"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -133,13 +145,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="194dp"
-        android:layout_marginTop="161dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="133dp"
         android:text="@string/check2"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -152,19 +165,20 @@
         android:layout_marginEnd="27dp"
         android:text="@string/check1"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/add_inv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/AIadd_inv"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
         android:layout_marginStart="126dp"
         android:layout_marginEnd="126dp"
         android:layout_marginBottom="28dp"
         android:backgroundTint="@color/button_color"
+        android:onClick="insertInventory"
         android:text="@string/add_inv"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -172,7 +186,19 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/left"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

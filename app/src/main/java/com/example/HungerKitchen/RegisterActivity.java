@@ -2,6 +2,9 @@ package com.example.HungerKitchen;
 
 import static android.content.ContentValues.TAG;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,10 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -30,13 +31,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText mFirstName, mLastName, mEmail, mPassword, mPhone, mConfirmPassword;
+    EditText mFirstName,mLastName,mUserName, mEmail,mPassword,mPhone;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
     FirebaseFirestore fstore;
     FirebaseDatabase rootnode;
     DatabaseReference reference;
     String userID;
+    TextView signin;
     Button signup;
 
 
@@ -47,18 +49,32 @@ public class RegisterActivity extends AppCompatActivity {
 
         mFirstName = findViewById(R.id.firstName);
         mLastName = findViewById(R.id.lastName);
+        mUserName = findViewById(R.id.userName);
         mEmail = findViewById(R.id.Email);
         mPassword = findViewById(R.id.password);
-        mConfirmPassword = findViewById(R.id.password2);
         mPhone = findViewById(R.id.phone);
         fstore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
-        signup = findViewById(R.id.mSignUpBtn);
+
+        if(fAuth.getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            finish();
+        }
 
         //Sign in button
 
+        signin = (TextView)findViewById(R.id.mSignInTxt);
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(RegisterActivity.this,LoginActivity.class);
+                startActivity(intent3);
+            }
+        });
+
         //Sign up button
+        signup = findViewById(R.id.mSignUpBtn);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,67 +88,65 @@ public class RegisterActivity extends AppCompatActivity {
                 String firstname = mFirstName.getText().toString();
                 String lastname = mLastName.getText().toString();
                 String phone = mPhone.getText().toString();
-                String password2 = mConfirmPassword.getText().toString().trim();
+                String username = mUserName.getText().toString();
 
-                UserHelperClass helperClass = new UserHelperClass(firstname, lastname, email, phone, password);
-                reference.child(firstname).setValue(helperClass);
+                UserHelperClass helperClass = new UserHelperClass(firstname,lastname,email,phone,username,password);
+                reference.child(username).setValue(helperClass);
 
                 //Validation process
-                if (TextUtils.isEmpty(email)) {
+                if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is required . ");
                     return;
                 }
-                if (TextUtils.isEmpty(password)) {
+                if (TextUtils.isEmpty(password)){
                     mPassword.setError("Password is needed . ");
                     return;
                 }
 
-                if (password.length() < 6) {
+                if(password.length()<6){
                     mPassword.setError("Password must be >= 6 characters");
                     return;
                 }
 
 
-                if (phone.length() != 10) {
+                if (phone.length() != 10){
                     mPhone.setError("Enter a valid phone number");
                     return;
-                }
-                if(!password.equals(password2)){
-                    mPassword.setError("Password should be match with confirm password");
                 }
 
                 progressBar.setVisibility(View.VISIBLE);
 
                 //register user in firebase firestore
-                fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(RegisterActivity.this, "User Created", Toast.LENGTH_SHORT).show();
+                        if (task.isSuccessful()){
+                            Toast.makeText(RegisterActivity.this,"User Created", Toast.LENGTH_SHORT).show();
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fstore.collection("users").document(userID);
-                            Map<String, Object> user = new HashMap<>();
+                            Map<String,Object> user = new HashMap<>();
                             user.put("fname", firstname);
                             user.put("lname", lastname);
                             user.put("email", email);
                             user.put("phone", phone);
+                            user.put("username", username);
 
                             //CLI comments
 
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
-                                    Log.d(TAG, "onSuccess: user profile is created for " + userID);
+                                    Log.d(TAG,"onSuccess: user profile is created for "+ userID );
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG, "onFailure: " + e.toString());
+                                    Log.d(TAG, "onFailure: "+ e.toString());
                                 }
                             });
-                            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-                        } else {
-                            Toast.makeText(RegisterActivity.this, "Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(),profile.class));
+                        }else {
+                            Toast.makeText(RegisterActivity.this,"Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                         }
                     }
