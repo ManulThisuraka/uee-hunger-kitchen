@@ -204,6 +204,7 @@ public class UserProfile extends AppCompatActivity {
                                                             Log.d("TAG", "User account deleted.");
                                                             FirebaseAuth.getInstance().signOut();
                                                             Intent goBack = new Intent(UserProfile.this, LoginActivity.class);
+                                                            goBack.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                                                             startActivity(goBack);
                                                         }
                                                     }
