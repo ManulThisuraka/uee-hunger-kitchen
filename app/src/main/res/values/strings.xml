@@ -278,5 +278,12 @@
     <string name="user_profile">User Profile</string>
     <string name="add_service">Add Service</string>
     <string name="add_to_inventory">Add to Inventory</string>
+    <string name="user_management">User Management</string>
+    <string name="volunteer_management">Volunteer Management</string>
+    <string name="funds_management">Funds Management</string>
+    <string name="inventory_management">Inventory Management</string>
+    <string name="to_eliminate_hunger">To Eliminate Hunger.</string>
+    <string name="first_name">First Name:</string>
+    <string name="phone">Phone:</string>
 
 </resources>

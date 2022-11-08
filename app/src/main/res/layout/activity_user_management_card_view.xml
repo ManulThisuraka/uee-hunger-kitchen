@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/larkblue"
+        android:scrollbars="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="40dp"
+        tools:context=".UserManagementCardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@color/button_color">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="122dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/delete"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/teal_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.264"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="93dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/first_name"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtFname"
+            app:layout_constraintEnd_toStartOf="@+id/txtFname"
+            app:layout_constraintTop_toTopOf="@+id/txtFname"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtFname"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/txtLname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/txtLname"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFname"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="28dp"
+            android:text="Last Name:"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtLname"
+            app:layout_constraintEnd_toStartOf="@+id/txtLname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtLname"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="55dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="28dp"
+            android:text="@string/phone"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtPhone"
+            app:layout_constraintEnd_toStartOf="@+id/txtPhone"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPhone"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="55dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="32dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/email"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEmail"
+            app:layout_constraintEnd_toStartOf="@+id/txtEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtEmail"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/txtPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLname"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
