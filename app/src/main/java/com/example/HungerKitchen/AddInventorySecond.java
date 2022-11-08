@@ -36,7 +36,7 @@ public class AddInventorySecond extends AppCompatActivity {
 
         IaddInv = findViewById(R.id.AIadd_inv);
 
-        Bundle extras = this.getIntent().getExtras();
+        Bundle extras = getIntent().getExtras();
         if (extras != null) {
             Idname = extras.getString("dname");
             Icontact = extras.getString("contact");
@@ -72,18 +72,25 @@ public class AddInventorySecond extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Please enter the date that you are deliver", Toast.LENGTH_SHORT).show();
         } else {
 
-            invobj.setDonorName(Idname.trim());
-            invobj.setContactNo(Icontact.trim());
-            invobj.setNicNo(Inic.trim());
-            invobj.setdAddress(Iaddress.trim());
-            invobj.setInvType(ItypeInv.getText().toString().trim());
-            invobj.setInvQty(IqtyInv.getText().toString().trim());
-            invobj.setExpDate(IexpDate.getText().toString().trim());
-            DatabaseReference newrefI = dbRef.push();
-            newrefI.setValue(invobj);
+//            invobj.setDonorName(Idname.trim());
+//            invobj.setContactNo(Icontact.trim());
+//            invobj.setNicNo(Inic.trim());
+//            invobj.setdAddress(Iaddress.trim());
+//            invobj.setInvType(ItypeInv.getText().toString().trim());
+//            invobj.setInvQty(IqtyInv.getText().toString().trim());
+//            invobj.setExpDate(IexpDate.getText().toString().trim());
+//            DatabaseReference newrefI = dbRef.push();
+//            newrefI.setValue(invobj);
             Toast.makeText(getApplicationContext(), "Yor Request Submitted Successfully", Toast.LENGTH_SHORT).show();
-            //Intent intent1 = new Intent(this,Addpayment.class);
-            //startActivity(intent1);
+            Intent intent1 = new Intent(this,EditInventory.class);
+            intent1.putExtra("dname",Idname);
+            intent1.putExtra("contact",Icontact);
+            intent1.putExtra("nic",Inic);
+            intent1.putExtra("address",Iaddress);
+            intent1.putExtra("typeInv",ItypeInv.getText().toString());
+            intent1.putExtra("qtyInv",IqtyInv.getText().toString());
+            intent1.putExtra("expDate",IexpDate.getText().toString());
+            startActivity(intent1);
         }
     }
 }

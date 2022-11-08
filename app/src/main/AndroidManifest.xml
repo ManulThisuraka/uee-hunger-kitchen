@@ -55,6 +55,15 @@
             android:name=".AddInventorySecond"
             android:exported="true" />
         <activity
+            android:name=".AddFundsFirst"
+            android:exported="true" />
+        <activity
+            android:name=".AddFundsSecond"
+            android:exported="true" />
+        <activity
+            android:name=".EditInventory"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -13,4 +13,5 @@
     <color name="grey">#253A4B</color>
     <color name="background_color">#89D9B9</color>
     <color name="button_color">#A7E9CF</color>
+    <color name="ok_btn">#58917A</color>
 </resources>
