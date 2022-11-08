@@ -23,38 +23,40 @@ public class AddFundsFirst extends AppCompatActivity {
         FcontactNo = findViewById(R.id.AFcontact);
         Faddress = findViewById(R.id.AFaddress);
         FnicNo = findViewById(R.id.AFnic);
-        //FpayType = findViewById(R.id.AFrbtn1);
+        FpayType = findViewById(R.id.AFtype);
 
         Fnext = findViewById(R.id.AFnext_pay);
 
-        ImageButton btnBack = findViewById(R.id.btnBack);
+        //ImageButton btnBack = findViewById(R.id.btnBack);
 
-        String Fdname = FdonorName.getText().toString();
-        String Fcontact = FcontactNo.getText().toString();
-        String Fadd = Faddress.getText().toString();
-        String Fnic = FnicNo.getText().toString();
         //String Fpayt = FpayType.getText().toString();
 
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent goBack = new Intent(AddFundsFirst.this, HomeDashboard.class);
-                startActivity(goBack);
-            }
-        });
+//        btnBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent goBack = new Intent(AddFundsFirst.this, HomeDashboard.class);
+//                startActivity(goBack);
+//            }
+//        });
 
         Fnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String Fdname = FdonorName.getText().toString();
+                String Fcontact = FcontactNo.getText().toString();
+                String Fadd = Faddress.getText().toString();
+                String Fnic = FnicNo.getText().toString();
+                String Ftype = FpayType.getText().toString();
+
                 Intent i = new Intent(AddFundsFirst.this, AddFundsSecond.class);
                 i.putExtra("dname",Fdname);
                 i.putExtra("contact",Fcontact);
                 i.putExtra("address",Fadd);
                 i.putExtra("nic",Fnic);
-                //i.putExtra("paytype",Fpayt);
+                i.putExtra("paytype",Ftype);
                 startActivity(i);
             }
         });
-
     }
 }
