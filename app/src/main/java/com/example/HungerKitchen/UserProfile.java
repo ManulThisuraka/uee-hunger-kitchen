@@ -143,8 +143,6 @@ public class UserProfile extends AppCompatActivity {
                     String name = AuthUser.getProviderData().toString();
                     String email = AuthUser.getEmail();
                     String pass = AuthUser.getProviderData().toString();
-                    Log.d("USER DATA **********", name);
-                    Log.d("USER DATA EMAIL **********", pass);
                 }
 
                 UserHelperClass helperClass = new UserHelperClass(nFname, nLname, nemail, nphone, npass1);
@@ -190,7 +188,6 @@ public class UserProfile extends AppCompatActivity {
                         FirebaseDatabase.getInstance().getReference().child("users")
                                 .child(uid).removeValue();
                         assert user != null;
-                        Log.d("LOGGED USER *****", String.valueOf(user));
                         AuthCredential credential = EmailAuthProvider.getCredential(mEmail.getText().toString(), mpassword.getText().toString());
                         user.reauthenticate(credential)
                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -211,7 +208,6 @@ public class UserProfile extends AppCompatActivity {
                                                 });
                                     }
                                 });
-
                     }
                 });
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
