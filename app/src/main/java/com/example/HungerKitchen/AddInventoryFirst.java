@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
-import com.google.firebase.database.DatabaseReference;
-
 public class AddInventoryFirst extends AppCompatActivity {
 
     EditText IdonorName, IcontactNo, InicNo, Iaddress;

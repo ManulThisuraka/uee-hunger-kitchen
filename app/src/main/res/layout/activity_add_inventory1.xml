@@ -146,7 +146,7 @@
         android:layout_marginTop="56dp"
         android:background="@drawable/input_field"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         android:textColor="@color/black"
         android:textColorHint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
