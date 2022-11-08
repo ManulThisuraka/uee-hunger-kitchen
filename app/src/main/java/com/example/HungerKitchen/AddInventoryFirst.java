@@ -18,7 +18,6 @@ public class AddInventoryFirst extends AppCompatActivity {
 
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,24 +32,24 @@ public class AddInventoryFirst extends AppCompatActivity {
 
         ImageButton btnBack = findViewById(R.id.btnBack);
 
-        String Idname = IdonorName.getText().toString();
-        String Icontact = IcontactNo.getText().toString();
-        String Inic = InicNo.getText().toString();
-        String Idaddress = Iaddress.getText().toString();
 
-
-
-//        btnBack.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent goBack = new Intent(AddInventoryFirst.this, HomeDashboard.class);
-//                startActivity(goBack);
-//            }
-//        });
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goBack = new Intent(AddInventoryFirst.this, HomeDashboard.class);
+                startActivity(goBack);
+            }
+        });
 
         Inext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String Idname = IdonorName.getText().toString();
+                String Icontact = IcontactNo.getText().toString();
+                String Inic = InicNo.getText().toString();
+                String Idaddress = Iaddress.getText().toString();
+
                 Intent i = new Intent(AddInventoryFirst.this, AddInventorySecond.class);
                 i.putExtra("dname",Idname);
                 i.putExtra("contact",Icontact);

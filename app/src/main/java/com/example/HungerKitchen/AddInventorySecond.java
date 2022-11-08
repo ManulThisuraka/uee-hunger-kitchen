@@ -36,13 +36,16 @@ public class AddInventorySecond extends AppCompatActivity {
 
         IaddInv = findViewById(R.id.AIadd_inv);
 
-        Bundle extras = this.getIntent().getExtras();
+        Bundle extras = getIntent().getExtras();
         if (extras != null) {
             Idname = extras.getString("dname");
             Icontact = extras.getString("contact");
             Inic = extras.getString("nic");
             Iaddress = extras.getString("address");
             //The key argument here must match that used in the other activity
+        }
+        else{
+            Log.e("holder","00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
         }
 
         invobj = new InventoryRecord();
