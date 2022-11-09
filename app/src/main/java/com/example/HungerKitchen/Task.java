@@ -9,11 +9,12 @@ public class Task {
 
     public Task() {}
 
-    public Task(String name, String skills, String date, String role) {
+    public Task(String name, String skills, String date, String role, String message) {
         this.name = name;
         this.skills = skills;
         this.date = date;
         this.role = role;
+        this.message = message;
     }
 
     public String getName() {

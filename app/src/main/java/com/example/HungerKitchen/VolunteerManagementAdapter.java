@@ -3,6 +3,7 @@ package com.example.HungerKitchen;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,7 +58,7 @@ class VolunteerManagementAdapter extends FirebaseRecyclerAdapter<Task, Volunteer
             //String uid = FirebaseAuth.getInstance().getUid();
            //for (UserInfo profile : user.getProviderData()) {
                 //String providerId = profile.getProviderId();
-
+                final String key = getRef(position).getKey();
 
                 holder.Cname.setText(model.getName());
                 holder.Cdate.setText(model.getDate());
@@ -69,6 +70,14 @@ class VolunteerManagementAdapter extends FirebaseRecyclerAdapter<Task, Volunteer
         //}else{
             //Log.d("qwe","User was null");
         //}
+        holder.btnAssign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),AssignTask.class);
+                intent.putExtra("key",key);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     // Function to tell the class about the Card view (here

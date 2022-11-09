@@ -49,6 +49,7 @@ public class AddVolunteering extends AppCompatActivity {
             taskobj.setDate(Vdate.getText().toString().trim());
             taskobj.setSkills(Vskills.getText().toString().trim());
             taskobj.setRole("Not Assigned");
+            taskobj.setMessage("");
             DatabaseReference newref = dbRef.push();
             newref.setValue(taskobj);
             Toast.makeText(getApplicationContext(), "Yor Request Submitted Successfully", Toast.LENGTH_SHORT).show();
