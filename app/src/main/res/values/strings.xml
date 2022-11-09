@@ -278,5 +278,9 @@
     <string name="user_profile">User Profile</string>
     <string name="add_service">Add Service</string>
     <string name="add_to_inventory">Add to Inventory</string>
+    <string name="fund_details">Funds Details</string>
+    <string name="Fupdate">UPDATE</string>
+    <string name="Fokay">OK</string>
+    <string name="expiry">Expiry Date</string>
 
 </resources>

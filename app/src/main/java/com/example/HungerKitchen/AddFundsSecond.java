@@ -76,20 +76,30 @@ public class AddFundsSecond extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Please enter the CVV", Toast.LENGTH_SHORT).show();
         } else {
 
-            fundobj.setName(Fdname.trim());
-            fundobj.setNumber(Fcontact.trim());
-            fundobj.setAddress(Fadd.trim());
-            fundobj.setNIC(Fnic.trim());
-            fundobj.setPaymentType(Fpayt.trim());
-            fundobj.setAmount(Famount.getText().toString().trim());
-            fundobj.setCardNumber(FcardNum.getText().toString().trim());
-            fundobj.setExDate(FexpDate.getText().toString().trim());
-            fundobj.setCVV(Fcvv.getText().toString().trim());
-            DatabaseReference newrefI = dbRef.push();
-            newrefI.setValue(fundobj);
+//            fundobj.setName(Fdname.trim());
+//            fundobj.setNumber(Fcontact.trim());
+//            fundobj.setAddress(Fadd.trim());
+//            fundobj.setNIC(Fnic.trim());
+//            fundobj.setPaymentType(Fpayt.trim());
+//            fundobj.setAmount(Famount.getText().toString().trim());
+//            fundobj.setCardNumber(FcardNum.getText().toString().trim());
+//            fundobj.setExDate(FexpDate.getText().toString().trim());
+//            fundobj.setCVV(Fcvv.getText().toString().trim());
+//            DatabaseReference newrefI = dbRef.push();
+//            newrefI.setValue(fundobj);
+
             Toast.makeText(getApplicationContext(), "Your Payment Submitted Successfully", Toast.LENGTH_SHORT).show();
-            //Intent intent1 = new Intent(this,Addpayment.class);
-            //startActivity(intent1);
+            Intent intent2 = new Intent(this,EditFunds.class);
+            intent2.putExtra("dname",Fdname);
+            intent2.putExtra("contact",Fcontact);
+            intent2.putExtra("address",Fadd);
+            intent2.putExtra("nic",Fnic);
+            intent2.putExtra("paytype",Fpayt);
+            intent2.putExtra("cardnum",FcardNum.getText().toString());
+            intent2.putExtra("amount",Famount.getText().toString());
+            intent2.putExtra("expiery",FexpDate.getText().toString());
+            intent2.putExtra("cvv",Fcvv.getText().toString());
+            startActivity(intent2);
         }
     }
 }
