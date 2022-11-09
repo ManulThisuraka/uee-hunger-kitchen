@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context=".AddInventoryFirst">
+    tools:context=".EditInventory">
 
     <TextView
         android:id="@+id/textView2"
@@ -277,7 +277,7 @@
         android:layout_height="53dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="217dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="28dp"
         android:backgroundTint="@color/button_color"
         android:text="@string/Iupdate"
         android:textAlignment="center"
@@ -286,6 +286,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton

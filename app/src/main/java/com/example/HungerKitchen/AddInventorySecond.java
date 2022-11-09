@@ -16,7 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class AddInventorySecond extends AppCompatActivity {
-    EditText ItypeInv, IqtyInv, IexpDate;
+    EditText  IqtyInv, IexpDate;
     Button IaddInv;
 
     InventoryRecord invobj;
@@ -30,7 +30,7 @@ public class AddInventorySecond extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_inventory2);
 
-        ItypeInv = findViewById(R.id.AIinvtype);
+
         IqtyInv = findViewById(R.id.AIinputQty);
         IexpDate = findViewById(R.id.AIexpectDate);
 
@@ -43,9 +43,6 @@ public class AddInventorySecond extends AppCompatActivity {
             Inic = extras.getString("nic");
             Iaddress = extras.getString("address");
             //The key argument here must match that used in the other activity
-        }
-        else{
-            Log.e("holder","00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
         }
 
         invobj = new InventoryRecord();
@@ -67,26 +64,31 @@ public class AddInventorySecond extends AppCompatActivity {
         //dbRef = FirebaseDatabase.getInstance().getReference().child("Tasks").child(uid);
         dbRef = FirebaseDatabase.getInstance().getReference().child("InventoryItems");
 
-        if (TextUtils.isEmpty(ItypeInv.getText().toString())) {
-            Toast.makeText(getApplicationContext(), "Please enter the inventory type", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(IqtyInv.getText().toString())) {
+        if (TextUtils.isEmpty(IqtyInv.getText().toString())) {
             Toast.makeText(getApplicationContext(), "Please enter the quantities", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(IexpDate.getText().toString())) {
             Toast.makeText(getApplicationContext(), "Please enter the date that you are deliver", Toast.LENGTH_SHORT).show();
         } else {
 
-            invobj.setDonorName(Idname.trim());
-            invobj.setContactNo(Icontact.trim());
-            invobj.setNicNo(Inic.trim());
-            invobj.setdAddress(Iaddress.trim());
-            invobj.setInvType(ItypeInv.getText().toString().trim());
-            invobj.setInvQty(IqtyInv.getText().toString().trim());
-            invobj.setExpDate(IexpDate.getText().toString().trim());
-            DatabaseReference newrefI = dbRef.push();
-            newrefI.setValue(invobj);
-            Toast.makeText(getApplicationContext(), "Yor Request Submitted Successfully", Toast.LENGTH_SHORT).show();
-            //Intent intent1 = new Intent(this,Addpayment.class);
-            //startActivity(intent1);
+//            invobj.setDonorName(Idname.trim());
+//            invobj.setContactNo(Icontact.trim());
+//            invobj.setNicNo(Inic.trim());
+//            invobj.setdAddress(Iaddress.trim());
+//            invobj.setInvType(ItypeInv.getText().toString().trim());
+//            invobj.setInvQty(IqtyInv.getText().toString().trim());
+//            invobj.setExpDate(IexpDate.getText().toString().trim());
+//            DatabaseReference newrefI = dbRef.push();
+//            newrefI.setValue(invobj);
+
+            Intent intent1 = new Intent(this,EditInventory.class);
+            intent1.putExtra("dname",Idname);
+            intent1.putExtra("contact",Icontact);
+            intent1.putExtra("nic",Inic);
+            intent1.putExtra("address",Iaddress);
+            intent1.putExtra("qtyInv",IqtyInv.getText().toString());
+            intent1.putExtra("expDate",IexpDate.getText().toString());
+            Toast.makeText(AddInventorySecond.this, "Yor Request Submitted Successfully", Toast.LENGTH_LONG).show();
+            startActivity(intent1);
         }
     }
 }

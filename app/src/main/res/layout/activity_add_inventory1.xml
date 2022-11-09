@@ -45,7 +45,7 @@
         android:layout_width="125dp"
         android:layout_height="30dp"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="364dp"
+        android:layout_marginTop="348dp"
         android:layout_marginEnd="267dp"
         android:text="@string/nic"
         android:textAlignment="center"
@@ -53,7 +53,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,7 +62,7 @@
         android:layout_width="302dp"
         android:layout_height="42dp"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="240dp"
         android:layout_marginEnd="234dp"
         android:text="@string/contact"
         android:textAlignment="center"
@@ -70,7 +70,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.561"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,7 +95,7 @@
         android:id="@+id/AIdonorname"
         android:layout_width="310dp"
         android:layout_height="50sp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="72dp"
         android:background="@drawable/input_field"
         android:ems="10"
         android:inputType="textPersonName"
