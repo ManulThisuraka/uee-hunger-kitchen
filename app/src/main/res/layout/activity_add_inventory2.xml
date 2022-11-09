@@ -111,7 +111,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <CheckBox
-        android:id="@+id/check3"
+        android:id="@+id/checkDry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="193dp"
@@ -127,7 +127,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/check2"
+        android:id="@+id/checkSpice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="194dp"
@@ -143,7 +143,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/check1"
+        android:id="@+id/checkUnprocessed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="193dp"
